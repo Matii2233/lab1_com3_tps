@@ -42,9 +42,9 @@ public class Main{
 }
 
 -----------------------------------------------------------
-        PUNTO 2----------------------------------------------------
+PUNTO 2----------------------------------------------------
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main
 {
@@ -72,9 +72,9 @@ public class Main
 }
 
 -----------------------------------------------------------
-        PUNTO 3----------------------------------------------------
+PUNTO 3----------------------------------------------------
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main
 {
@@ -108,9 +108,9 @@ public class Main
 }
 
 -----------------------------------------------------------
-        PUNTO 4----------------------------------------------------
+PUNTO 4----------------------------------------------------
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main
 {
@@ -137,9 +137,9 @@ public class Main
 }
 
 -----------------------------------------------------------
-        PUNTO 5----------------------------------------------------
+PUNTO 5----------------------------------------------------
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
 public class tp6java {
     public static void main(String args[]) {
@@ -165,39 +165,6 @@ public class tp6java {
         System.out.println("hay" +positivos+ "numeros positivos");
         System.out.println("hay" +negativos+ "numeros negativos");
         System.out.println("hay" +ceros+ "ceros");
-    }
-}
-
-----------------------------------------------------------------
-PUNTO5----------------------------------------------------------
-
-
-import java.util.Scanner;
-
-public class tp6java {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int tamaño=10,ceros=0,positivos=0,negativos=0;
-        int[] numeros = new int[tamaño];
-
-        System.out.println("Ingrese 10 numeros:");
-        for (int i=0; i<=tamaño-1; i++) {
-            numeros[i]=sc.nextInt();
-
-            if (numeros[i]<0) {
-                negativos ++;
-            }
-            if (numeros[i]>0) {
-                positivos ++;
-            }
-            if (numeros[i]==0) {
-                ceros ++;
-            }
-        }
-
-        System.out.println("hay " +positivos+ " numeros positivos");
-        System.out.println("hay " +negativos+ " numeros negativos");
-        System.out.println("hay " +ceros+ " ceros");
     }
 }
 
