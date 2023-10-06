@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 /*
-// Declaración e inicialización puntos 1,2,3 y 4
+// * * * * * * DECLARACION E INICIALIZACION PUNTOS 1,2,3 y 4 * * * * * *
 
 public class ejercicios_arrays {
     public static void main(String args[]) {
@@ -24,7 +24,7 @@ public class ejercicios_arrays {
 }
 
 
-// Lectura y escritura PUNTOS 1 y 2
+// * * * * * * LECTIRA Y ESCRITURA PUNTOS 1 y 2  * * * * * *
 
 public class ejercicios_arrays {
     public static void main(String args[]) {
@@ -46,6 +46,8 @@ public class ejercicios_arrays {
             reales[i] = sc.nextDouble();
         }
 
+
+        // * * * * * * PUNTOS 3 y 4  * * * * * *
         char[] caracteres = new char[5];
 
         System.out.println("Ingresa caracteres:");
@@ -58,6 +60,8 @@ public class ejercicios_arrays {
             System.out.print(" " +caracteres[i]+ " ");
         }
 
+
+        
         System.out.println("");
         boolean[] val_de_verdad = new boolean[5];
 
@@ -77,29 +81,28 @@ public class ejercicios_arrays {
 
 
 
-// Operaciones aritméticas
+// * * * * * * OPERACIONES ARITMETICAS * * * * * *
 
 public class ejercicios_arrays {
     public static void main(String args[]) {
 
-
+        // * * * * * * PUNTO 1 suma de enteros * * * * * *
         int [] nums = {10,9,8,7,6,5,4,3,2,1};
         int     suma = 0,
                 mult = 0;
 
-        // PUNTO 1 suma de enteros
         for (int i=0; i<10; i++) {
             suma = suma + nums[i];
         }
         System.out.println(suma);
 
-        // PUNTO 2 multiplicacion de enteros
+        // * * * * * * PUNTO 2 multiplicacion de enteros * * * * * *
         for (int i=0; i<10; i++) {
             mult = mult*nums[i];
         }
         System.out.println(mult);
 
-        // PUNTO 3 ordenar de menor a mayor
+        // * * * * * * PUNTO 3 ordenar de menor a mayor * * * * * *
         int aux = 0;
 
         for (int i=0; i<10; i++) {
@@ -115,7 +118,7 @@ public class ejercicios_arrays {
             System.out.print(" " +nums[i]+ " ");
         }
 
-        //PUNTO 4 ordenar alfabeticamente
+        // * * * * * *PUNTO 4 ordenar alfabeticamente * * * * * *
         String [] palabras = {"libro","pluma","flor","copa","basto","espada","oro","corona","reloj","mate"};
 
         Arrays.sort(palabras);
@@ -129,42 +132,42 @@ public class ejercicios_arrays {
 
 
 
-// Operaciones aritméticas
+// * * * * * * OPERACIONES ARITMETICAS * * * * * *
 
 public class pruebas {
     public static void main(String args[]) {
 
-        //PUNTO 1  contar los numeros pares de un arreglo con un metodo
+        //   PUNTO 1  contar los numeros pares de un arreglo con un metodo
         int[] nums = {1,2,3,4,5,6,7,8,9,10};
         System.out.println("La cantidad de numeros pares es: " +contar_pares(nums));
 
 
-        //PUNTO 2 metodo que cuente la cantidad de elementos mayores que 10 de un array
+        //   PUNTO 2 metodo que cuente la cantidad de elementos mayores que 10 de un array
         double[] conjunto1 = {1.5,3,4.5,6,7.5,9,10.5,12,13.5,15};
         System.out.println("La cantidad de numeros mayores que 10 en la lista es: " +mayores_que_diez(conjunto1));
 
 
-        //PUNTO 3 metodo que sume los elementos multiplos de 3 de una lista
+        //   PUNTO 3 metodo que sume los elementos multiplos de 3 de una lista
         int[] conjunto2 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
         System.out.println("La suma de los numeros multiplos de 3 de la lista es: " +sumar_multiplos(conjunto2));
 
 
-        //PUNTO 4 metodo que retorne el numero mayor de una lista de enteros
+        //   PUNTO 4 metodo que retorne el numero mayor de una lista de enteros
         System.out.println("El numero mayor de la lista es: " +maximo_num(nums));
 
 
-        //PUNTO 5 metodo que obtenga la palabra mas corta de una lista de palabras
+        //   PUNTO 5 metodo que obtenga la palabra mas corta de una lista de palabras
         String [] palabras = {"libro","pluma","flor","copa","basto","espada","oro","corona","reloj","mate"};
         System.out.println("la palabra mas corta de la lista es: " +obtener_palabra_mas_corta(palabras));
 
 
-        //PUNTO 6 metodo que copie un array de enteros en otro array
+        //   PUNTO 6 metodo que copie un array de enteros en otro array
         int[] copia_nums = new int[10];
         copiar_nums(nums,copia_nums);
     }
 
 
-    //funcion PUNTO 1 (obtener la cantidad de numeros pares de un arreglo int)
+    //FUNCION PUNTO 1 (obtener la cantidad de numeros pares de un arreglo int)
     public static int contar_pares(int[] nums){
         int pares = 0;
         for (int i=0; i<10; i++) {
@@ -215,6 +218,7 @@ public class pruebas {
     }
 
 
+
     //FUNCION PUNTO 5 (obtener la palabra mas corta de una lista de cadenas)
     public static String obtener_palabra_mas_corta(String[] palabras){
         String palabra;
@@ -228,6 +232,7 @@ public class pruebas {
         }
         return palabra_mas_corta;
     }
+
 
 
     //FUNCION PUNTO 6 (copiar un array de enteros en otro array)
